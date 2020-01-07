@@ -116,7 +116,6 @@ fetch(URL)
       .attr("data-xvalue", (d, i) => d["Year"])
       .attr("data-yvalue", d => newDate(d))
       .on("mouseover", function(d, i) {
-        console.log(d3.event.x);
         $("#tooltip").show();
         d3.select("#tooltip")
           .attr("data-year", d["Year"])
